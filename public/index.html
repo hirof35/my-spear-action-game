@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>やり投げゲーム</title>
+    <style>
+        canvas { border: 2px solid #333; background-color: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h1>やり投げゲーム</h1>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+    <div id="controls">
+        <label>角度: <input type="range" id="angle" min="0" max="90" value="45"> <span id="angleVal">45</span>度</label>
+        <br>
+        <label>パワー: <input type="range" id="power" min="10" max="50" value="20"> <span id="powerVal">20</span></label>
+        <br>
+        <button id="throwBtn">投げる！</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
